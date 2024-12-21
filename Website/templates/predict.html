@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Prediksi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hasil Prediksi</h1>
+        
+        <!-- Check if result is available -->
+        {% if hasil %}
+        <div class="result">
+            <p class="result-text">{{ hasil|safe }}</p>
+            <img src="{{ data }}" alt="Gambar MRI" class="uploaded-img">
+        </div>
+        {% else %}
+        <p class="result-text">Belum ada hasil prediksi. Silakan unggah gambar MRI terlebih dahulu.</p>
+        {% endif %}
+        
+        <!-- Action buttons -->
+        <div class="form-actions">
+            <form action="/upload">
+                <button type="submit" class="primary-btn">Unggah Gambar Lagi</button>
+            </form>
+            <form action="/">
+                <button type="submit" class="secondary-btn">Kembali ke Beranda</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

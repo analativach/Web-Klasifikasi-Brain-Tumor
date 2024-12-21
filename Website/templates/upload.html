@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unggah Gambar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Unggah Gambar MRI untuk Prediksi</h1>
+            <p>Silakan pilih gambar MRI untuk diprediksi</p>
+        </header>
+
+        <div class="upload-container">
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="img">Pilih Gambar MRI:</label>
+                    <input type="file" name="img" id="img" required>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="primary-btn">Prediksi</button>
+                    <a href="/" class="secondary-btn">Kembali</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
