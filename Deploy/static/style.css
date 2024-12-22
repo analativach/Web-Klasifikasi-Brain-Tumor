@@ -1,0 +1,295 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Umum */
+body {
+    background: url('/static/virtual_bg.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #f7f6f6; /* Warna teks default yang lebih gelap untuk kenyamanan baca */
+}
+
+/* Container Umum */
+.container {
+    width: 90%;
+    max-width: 1200px;  /* Maksimalkan lebar kontainer agar lebih fleksibel */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and titles */
+h1, h2 {
+    font-size: 2.5rem;  /* Ukuran font lebih besar */
+    margin-bottom: 20px;
+    color: #ffffff;  /* Gunakan warna putih atau terang agar mudah terbaca di latar belakang gelap */
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #b0b0b0;  /* Warna teks lebih ringan agar tidak mencolok */
+}
+
+/* Hero Section */
+.hero {
+    background-color: rgba(44, 62, 80, 0.7); /* Biru gelap dengan transparansi 70% */
+    padding: 40px 20px; /* Padding lebih kecil */
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut untuk efek kedalaman */
+    max-width: 90%; /* Membatasi lebar agar lebih responsif */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero p {
+    font-size: 16px; /* Ukuran font lebih kecil */
+    color: #ffffff; /* Warna teks putih untuk kontras maksimal */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px; /* Lebar maksimal untuk teks agar tidak terlalu lebar */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Result text */
+.result-text {
+    font-size: 1.2rem;
+    color: #a1a4a7;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Uploaded image display */
+.uploaded-img {
+    max-width: 30%;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Efek bayangan yang lebih halus */
+}
+
+/* Actions section (buttons) */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Membuat tombol lebih fleksibel di layar kecil */
+}
+
+/* Styling buttons */
+button, .secondary-btn {
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;  /* Membuat teks tombol lebih menarik */
+}
+
+.primary-btn {
+    background-color: #2f668b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.primary-btn:hover {
+    background-color: #4e9bcd;
+    transform: scale(1.05);  /* Efek pembesaran tombol saat hover */
+}
+
+.secondary-btn {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.secondary-btn:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+/* Remove underline on links */
+a {
+    text-decoration: none;
+}
+
+/* About Tumor Section */
+.article {
+    background-color: rgba(44, 62, 80, 0.7); /* Biru gelap dengan transparansi 70% */
+    padding: 25px 20px; /* Padding lebih kecil */
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut agar artikel terangkat */
+    max-width: 80%; /* Lebar maksimal lebih kecil agar lebih proporsional */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article h2 {
+    font-size: 24px; /* Ukuran judul lebih kecil */
+    color: #ffffff; /* Warna teks putih untuk kontras maksimal */
+    margin-bottom: 15px;
+    font-weight: 600; /* Tebalkan judul untuk penekanan */
+}
+
+.article p {
+    font-size: 14px; /* Ukuran font lebih kecil untuk teks */
+    color: #f8fafb; /* Warna teks putih cerah untuk kontras */
+    line-height: 1.8;
+    margin-bottom: 20px; /* Menambahkan jarak agar tidak terlalu rapat */
+    text-align: justify; /* Membuat teks rata kiri-kanan */
+}
+
+.article .secondary-btn {
+    display: inline-block;
+    background-color: #2f668b; /* Tombol biru terang */
+    color: white;
+    padding: 10px 20px; /* Padding lebih kecil */
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px; /* Menyesuaikan jarak dengan elemen lain */
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+}
+
+.article .secondary-btn:hover {
+    background-color: #2980b9; /* Warna lebih gelap saat hover */
+    transform: translateY(-2px); /* Efek tombol terangkat saat hover */
+}
+
+.journals li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.journals li:last-child {
+    border-bottom: none;
+}
+
+.journals img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.journals .journal-content {
+    max-width: 800px;
+}
+
+.journals .journal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.journals .journal-title a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.journals .journal-title a:hover {
+    text-decoration: underline;
+}
+
+.journals .journal-description {
+    font-size: 1rem;
+    color: #e5ebeb;
+    margin-top: 10px;
+}
+
+.journals .secondary-btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.journals .secondary-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Styling untuk peringatan yang kecil dan sederhana */
+.warning-text {
+    font-size: 14px;
+    color: #e74c3c;
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Make the website responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-actions button, .form-actions a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .uploaded-img {
+        max-width: 80%;  /* Gambar lebih besar di perangkat kecil */
+    }
+    .hero {
+        padding: 30px 20px; /* Padding lebih kecil di perangkat kecil */
+    }
+
+    .article {
+        padding: 20px;
+        max-width: 90%; /* Lebar lebih besar untuk perangkat kecil */
+    }
+
+    .hero p {
+        font-size: 14px; /* Ukuran font lebih kecil di perangkat kecil */
+    }
+
+    .article h2 {
+        font-size: 22px; /* Ukuran font judul lebih kecil di perangkat kecil */
+    }
+
+    .article p {
+        font-size: 12px; /* Ukuran font konten lebih kecil di perangkat kecil */
+    }
+}
+

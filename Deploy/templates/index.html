@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Prediksi Tumor Otak</h1>
+            <p>Teknologi AI untuk Deteksi Awal Tumor Otak Melalui MRI</p>
+        </header>
+
+        <section class="hero">
+            <p>Unggah gambar Anda untuk memulai proses prediksi.</p>
+            <form action="/upload">
+                <button type="submit" class="primary-btn">Unggah Gambar</button>
+            </form>
+        </section>
+
+        <section class="article">
+            <h2>Tentang Tumor Otak</h2>
+            <p>
+                Tumor otak adalah pertumbuhan sel abnormal di dalam atau di sekitar otak. Gejala yang umum meliputi sakit kepala, perubahan penglihatan, hingga masalah memori. 
+                Dengan deteksi dini melalui MRI, pengobatan dapat lebih efektif. Teknologi AI kini membantu mempercepat diagnosis dengan akurasi tinggi.
+            </p>
+            <a href="https://id.wikipedia.org/wiki/Tumor_otak" target="_blank" class="secondary-btn">Pelajari Lebih Lanjut</a>
+        </section>
+
+        <section class="journals">
+            <header>
+                <h2>Referensi Jurnal Ilmiah</h2>
+            </header>
+            <ul>
+                <li>
+                    <img src="uploads/Te-me_0015.jpg" alt="Meningioma">
+                    <div class="journal-content">
+                        <div class="journal-title">
+                            <a href="https://www.fusion.rifainstitute.com/index.php/fusion/article/view/120/113" target="_blank">Meningioma: Diagnosis, Patogenesis, dan Penatalaksanaan</a>
+                        </div>
+                        <p class="journal-description">
+                            Meningioma adalah jenis tumor otak yang berkembang pada meninges, yaitu lapisan pelindung yang mengelilingi otak dan sumsum tulang belakang. Meningioma umumnya berkembang secara perlahan dan sering kali dapat diangkat melalui operasi.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="uploads/Te-gl_0010.jpg" alt="Glioma">
+                    <div class="journal-content">
+                        <div class="journal-title">
+                            <a href="https://inis.iaea.org/collection/NCLCollectionStore/_Public/47/082/47082689.pdf?r=1" target="_blank">Glioma: Pembaruan dalam Penanganan dan Pengobatan</a>
+                        </div>
+                        <p class="journal-description">
+                            Glioma adalah tumor yang berasal dari glial cells di otak. Tergolong tumor otak yang agresif, glioma seringkali memerlukan perawatan kompleks, termasuk bedah, radiasi, dan kemoterapi.
+                        </p>
+                </li>
+                <li>
+                    <img src="uploads/Te-pi_0020.jpg" alt="Pituitary Tumor">
+                    <div class="journal-content">
+                        <div class="journal-title">
+                            <a href="https://talenta.usu.ac.id/jetromi/article/view/4909/3354" target="_blank">Tumor Pituitari: Karakteristik dan Pendekatan Terapi</a>
+                        </div>
+                        <p class="journal-description">
+                            Tumor pituitari berkembang di kelenjar pituitari, yang mengatur banyak fungsi tubuh melalui hormon. Meskipun tumor ini seringkali jinak, pengobatan sangat bergantung pada jenis tumor dan dampaknya terhadap produksi hormon.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>               
+          
+    </div>
+</body>
+</html>
